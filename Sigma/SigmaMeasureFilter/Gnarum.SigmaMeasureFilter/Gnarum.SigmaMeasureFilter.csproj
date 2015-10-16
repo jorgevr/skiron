@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB9AD83C-4351-4590-9F66-C42B3A33A5F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gnarum.SigmaMeasureFilter</RootNamespace>
+    <AssemblyName>Gnarum.SigmaMeasureFilter</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=2.1.2.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\SigmaMeasureFilterSolution\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\SigmaMeasureFilterSolution\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=2.1.2.400, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\SigmaMeasureFilterSolution\packages\Quartz.2.1.2\lib\net40\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="sapnco, Version=3.0.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ExtLibraries\SAP\sapnco.dll</HintPath>
+    </Reference>
+    <Reference Include="sapnco_utils, Version=3.0.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ExtLibraries\SAP\sapnco_utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\DateTimeUtil.cs" />
+    <Compile Include="Helpers\MeasureValidation.cs" />
+    <Compile Include="Ninject\ModelProvider.cs" />
+    <Compile Include="Ninject\ProvidersModule.cs" />
+    <Compile Include="Providers\WebAPIProvider.cs" />
+    <Compile Include="SigmaMeasureFilterQuartzDispatcher.cs" />
+    <Compile Include="SigmaMeasureFilterStart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\SAPProvider.cs" />
+    <Compile Include="SigmaMeasureFilterStartHandlerJob.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Core\Libraries\Gnarum.Quartz\Gnarum.Quartz.csproj">
+      <Project>{057D802D-9B77-4945-8782-7E0DC7AE6BE4}</Project>
+      <Name>Gnarum.Quartz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\Libraries\Gnarum.SAP\Gnarum.SAP.csproj">
+      <Project>{4CDAA09D-55BD-4B8B-8C54-F8FF8A9C8BAB}</Project>
+      <Name>Gnarum.SAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\Libraries\Gnarum.Wise.NotifierSender.Model\Gnarum.Wise.NotifierSender.Model.csproj">
+      <Project>{8981A93D-4949-4728-91FD-5E3568A2E376}</Project>
+      <Name>Gnarum.Wise.NotifierSender.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\Libraries\Gnarum.Wise.NotifierSender\Gnarum.Wise.NotifierSender.csproj">
+      <Project>{3EEB4CCF-2DB3-4B50-99CF-7E7F47B991E6}</Project>
+      <Name>Gnarum.Wise.NotifierSender</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\Libraries\Gnarum\Gnarum.csproj">
+      <Project>{B14AE881-043A-43A2-A818-F9A51FEB21FA}</Project>
+      <Name>Gnarum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gnarum.SigmaMeasureFilter.Model.Sap\Gnarum.SigmaMeasureFilter.Model.Sap.csproj">
+      <Project>{85ACCE6A-3EE0-4734-8DB2-A5714BD8C6B2}</Project>
+      <Name>Gnarum.SigmaMeasureFilter.Model.Sap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gnarum.SigmaMeasureFilter.Model\Gnarum.SigmaMeasureFilter.Model.csproj">
+      <Project>{804EB9E4-F186-43F0-91B7-494032AFD7D0}</Project>
+      <Name>Gnarum.SigmaMeasureFilter.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

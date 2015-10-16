@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3dda3124-978e-4ea8-9a05-7f015a372171" name="david.velasco@PC-28 2014-01-22 09:27:00" runUser="GNARUM\david.velasco" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Configuración de pruebas predeterminada" id="0657eb6e-8242-4531-b8e6-92e25dde20b9">
+    <Deployment runDeploymentRoot="david.velasco_PC-28 2014-01-22 09_27_00">
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\SigmaMeasureFilter\Gnarum.SigmaMeasureFilter\bin\Debug\Gnarum.SigmaMeasureFilter.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\Tests\SigmaMeasureFilterTestSolution\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Core\Libraries\Gnarum.Quartz\bin\Debug\Gnarum.Quartz.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Core\Libraries\Gnarum\bin\Debug\Gnarum.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\Tests\SigmaMeasureFilterTestSolution\packages\Quartz.2.1.2\lib\net40\Quartz.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\SigmaMeasureFilter\Gnarum.SigmaMeasureFilter.Model.Sap\bin\Debug\Gnarum.SigmaMeasureFilter.Model.Sap.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\SigmaMeasureFilter\Gnarum.SigmaMeasureFilter.Model\bin\Debug\Gnarum.SigmaMeasureFilter.Model.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Core\Libraries\Gnarum.SAP\bin\Debug\Gnarum.SAP.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\Tests\SigmaMeasureFilterTestSolution\packages\Moq.4.0.10827\lib\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Core\Libraries\Gnarum.SAP\bin\Debug\Ninject.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-22T09:27:00.8115528+01:00" queuing="2014-01-22T09:27:30.9795693+01:00" start="2014-01-22T09:27:00.8115528+01:00" finish="2014-01-22T09:27:31.9236637+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="7" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="7" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PC-28" outcome="Error" timestamp="2014-01-22T09:27:31.8816595+01:00">
+        <Text>El proceso del host de pruebas terminó inesperadamente.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_Identify_As_Ambiguous_Winter_Time_Change_Of_Windhoek" storage="c:\work\wise_r3\svn\trunk\modules\sigma\tests\gnarum.sigmameasurefilter.test\bin\debug\gnarum.sigmameasurefilter.test.dll" id="3be09b6d-af20-53d7-3189-325adeff58da">
+      <Execution id="3aadc630-c13e-4982-87ee-315b9970a755" />
+      <TestMethod codeBase="C:/WORK/WISE_R3/SVN/trunk/Modules/Sigma/Tests/Gnarum.SigmaMeasureFilter.Test/bin/Debug/Gnarum.SigmaMeasureFilter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gnarum.Wise.SigmaMeasureFilter.Test.SigmaMeasureFilterStartTest, Gnarum.SigmaMeasureFilter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Identify_As_Ambiguous_Winter_Time_Change_Of_Windhoek" />
+    </UnitTest>
+    <UnitTest name="Can_Get_Correct_Data_In_Winter_Time_Change" storage="c:\work\wise_r3\svn\trunk\modules\sigma\tests\gnarum.sigmameasurefilter.test\bin\debug\gnarum.sigmameasurefilter.test.dll" id="b5ee5427-6e36-619a-0d17-d8480d6d6e29">
+      <Execution id="15e7a429-feb0-42c0-a10d-bb765f1c618f" />
+      <TestMethod codeBase="C:/WORK/WISE_R3/SVN/trunk/Modules/Sigma/Tests/Gnarum.SigmaMeasureFilter.Test/bin/Debug/Gnarum.SigmaMeasureFilter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gnarum.Wise.SigmaMeasureFilter.Test.SigmaMeasureFilterStartTest, Gnarum.SigmaMeasureFilter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Get_Correct_Data_In_Winter_Time_Change" />
+    </UnitTest>
+    <UnitTest name="Can_Launch_Jobs_with_repeat_interval" storage="c:\work\wise_r3\svn\trunk\modules\sigma\tests\gnarum.sigmameasurefilter.test\bin\debug\gnarum.sigmameasurefilter.test.dll" id="96dfde96-0c69-16e9-1e39-5981c32cd5d1">
+      <Execution id="41511953-09d5-4bec-8ed8-bc44d0686e32" />
+      <TestMethod codeBase="C:/WORK/WISE_R3/SVN/trunk/Modules/Sigma/Tests/Gnarum.SigmaMeasureFilter.Test/bin/Debug/Gnarum.SigmaMeasureFilter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gnarum.SigmaMeasureFilter.Test.SigmaMeasureFilterQuartzDispatcherTest, Gnarum.SigmaMeasureFilter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Launch_Jobs_with_repeat_interval" />
+    </UnitTest>
+    <UnitTest name="Can_Get_Correct_Data_In_Summer_Daylight_Time_Change_In_Rare_TimeZone" storage="c:\work\wise_r3\svn\trunk\modules\sigma\tests\gnarum.sigmameasurefilter.test\bin\debug\gnarum.sigmameasurefilter.test.dll" id="9ff4d356-3994-a283-8022-3be8e645c467">
+      <Execution id="f61d72a3-17e8-481a-80aa-75ed47f2b191" />
+      <TestMethod codeBase="C:/WORK/WISE_R3/SVN/trunk/Modules/Sigma/Tests/Gnarum.SigmaMeasureFilter.Test/bin/Debug/Gnarum.SigmaMeasureFilter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gnarum.Wise.SigmaMeasureFilter.Test.SigmaMeasureFilterStartTest, Gnarum.SigmaMeasureFilter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Get_Correct_Data_In_Summer_Daylight_Time_Change_In_Rare_TimeZone" />
+    </UnitTest>
+    <UnitTest name="Can_Get_Corrected_Data_With_Summer_Time_Change" storage="c:\work\wise_r3\svn\trunk\modules\sigma\tests\gnarum.sigmameasurefilter.test\bin\debug\gnarum.sigmameasurefilter.test.dll" id="3f544f3b-e532-2658-64ab-505fcd2b27d0">
+      <Execution id="cb91ea25-21e2-4334-a32f-8c95730641bb" />
+      <TestMethod codeBase="C:/WORK/WISE_R3/SVN/trunk/Modules/Sigma/Tests/Gnarum.SigmaMeasureFilter.Test/bin/Debug/Gnarum.SigmaMeasureFilter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gnarum.Wise.SigmaMeasureFilter.Test.SigmaMeasureFilterStartTest, Gnarum.SigmaMeasureFilter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Get_Corrected_Data_With_Summer_Time_Change" />
+    </UnitTest>
+    <UnitTest name="Can_Process_Plants" storage="c:\work\wise_r3\svn\trunk\modules\sigma\tests\gnarum.sigmameasurefilter.test\bin\debug\gnarum.sigmameasurefilter.test.dll" id="d746e9a4-70bd-85ef-4317-a693cc2403b4">
+      <Execution id="17c33f7f-669e-4dfb-8262-80efba479dc6" />
+      <TestMethod codeBase="C:/WORK/WISE_R3/SVN/trunk/Modules/Sigma/Tests/Gnarum.SigmaMeasureFilter.Test/bin/Debug/Gnarum.SigmaMeasureFilter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gnarum.Wise.SigmaMeasureFilter.Test.SigmaMeasureFilterStartTest, Gnarum.SigmaMeasureFilter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Process_Plants" />
+    </UnitTest>
+    <UnitTest name="Can_Get_Correct_Data_With_Missing_Periods" storage="c:\work\wise_r3\svn\trunk\modules\sigma\tests\gnarum.sigmameasurefilter.test\bin\debug\gnarum.sigmameasurefilter.test.dll" id="619b9771-37fe-793b-756b-d4e63b52d386">
+      <Execution id="d0fbcefe-c89e-4f89-8e93-7d596d66867e" />
+      <TestMethod codeBase="C:/WORK/WISE_R3/SVN/trunk/Modules/Sigma/Tests/Gnarum.SigmaMeasureFilter.Test/bin/Debug/Gnarum.SigmaMeasureFilter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gnarum.Wise.SigmaMeasureFilter.Test.SigmaMeasureFilterStartTest, Gnarum.SigmaMeasureFilter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Get_Correct_Data_With_Missing_Periods" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3be09b6d-af20-53d7-3189-325adeff58da" executionId="3aadc630-c13e-4982-87ee-315b9970a755" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ff4d356-3994-a283-8022-3be8e645c467" executionId="f61d72a3-17e8-481a-80aa-75ed47f2b191" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5ee5427-6e36-619a-0d17-d8480d6d6e29" executionId="15e7a429-feb0-42c0-a10d-bb765f1c618f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f544f3b-e532-2658-64ab-505fcd2b27d0" executionId="cb91ea25-21e2-4334-a32f-8c95730641bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="619b9771-37fe-793b-756b-d4e63b52d386" executionId="d0fbcefe-c89e-4f89-8e93-7d596d66867e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d746e9a4-70bd-85ef-4317-a693cc2403b4" executionId="17c33f7f-669e-4dfb-8262-80efba479dc6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96dfde96-0c69-16e9-1e39-5981c32cd5d1" executionId="41511953-09d5-4bec-8ed8-bc44d0686e32" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3aadc630-c13e-4982-87ee-315b9970a755" testId="3be09b6d-af20-53d7-3189-325adeff58da" testName="Can_Identify_As_Ambiguous_Winter_Time_Change_Of_Windhoek" computerName="PC-28" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3aadc630-c13e-4982-87ee-315b9970a755">
+    </UnitTestResult>
+    <UnitTestResult executionId="f61d72a3-17e8-481a-80aa-75ed47f2b191" testId="9ff4d356-3994-a283-8022-3be8e645c467" testName="Can_Get_Correct_Data_In_Summer_Daylight_Time_Change_In_Rare_TimeZone" computerName="PC-28" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f61d72a3-17e8-481a-80aa-75ed47f2b191">
+    </UnitTestResult>
+    <UnitTestResult executionId="15e7a429-feb0-42c0-a10d-bb765f1c618f" testId="b5ee5427-6e36-619a-0d17-d8480d6d6e29" testName="Can_Get_Correct_Data_In_Winter_Time_Change" computerName="PC-28" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="15e7a429-feb0-42c0-a10d-bb765f1c618f">
+    </UnitTestResult>
+    <UnitTestResult executionId="cb91ea25-21e2-4334-a32f-8c95730641bb" testId="3f544f3b-e532-2658-64ab-505fcd2b27d0" testName="Can_Get_Corrected_Data_With_Summer_Time_Change" computerName="PC-28" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb91ea25-21e2-4334-a32f-8c95730641bb">
+    </UnitTestResult>
+    <UnitTestResult executionId="d0fbcefe-c89e-4f89-8e93-7d596d66867e" testId="619b9771-37fe-793b-756b-d4e63b52d386" testName="Can_Get_Correct_Data_With_Missing_Periods" computerName="PC-28" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0fbcefe-c89e-4f89-8e93-7d596d66867e">
+    </UnitTestResult>
+    <UnitTestResult executionId="17c33f7f-669e-4dfb-8262-80efba479dc6" testId="d746e9a4-70bd-85ef-4317-a693cc2403b4" testName="Can_Process_Plants" computerName="PC-28" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17c33f7f-669e-4dfb-8262-80efba479dc6">
+    </UnitTestResult>
+    <UnitTestResult executionId="41511953-09d5-4bec-8ed8-bc44d0686e32" testId="96dfde96-0c69-16e9-1e39-5981c32cd5d1" testName="Can_Launch_Jobs_with_repeat_interval" computerName="PC-28" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41511953-09d5-4bec-8ed8-bc44d0686e32">
+    </UnitTestResult>
+  </Results>
+</TestRun>

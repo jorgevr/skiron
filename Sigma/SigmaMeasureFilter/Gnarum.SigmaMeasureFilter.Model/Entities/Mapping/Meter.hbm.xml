@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Gnarum.SigmaMeasureFilter.Model"
+                   namespace="Gnarum.SigmaMeasureFilter.Model.Entities">
+
+
+ <class name="Meter" table="tMeter">
+    <id name="Id" type="string" length="20">
+      <generator class="assigned"/>
+    </id>
+    <property name="Power" type="double" not-null="true" precision="12" scale="4"/>
+    <property name="LosingRate" type="double" not-null="true" precision="5" scale="4"/>
+     <many-to-one name="Plant"  class="Plant" column="Id_Plant" not-null="true"/>
+  </class>
+</hibernate-mapping>

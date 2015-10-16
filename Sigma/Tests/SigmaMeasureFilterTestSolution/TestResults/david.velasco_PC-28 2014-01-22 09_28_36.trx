@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="adff26fb-1178-4c46-97e9-81be2f0ecd48" name="david.velasco@PC-28 2014-01-22 09:28:36" runUser="GNARUM\david.velasco" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Configuración de pruebas predeterminada" id="a2dcc820-5c47-4aaf-9d4a-48603f82d734">
+    <Deployment runDeploymentRoot="david.velasco_PC-28 2014-01-22 09_28_36">
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\SigmaMeasureFilter\Gnarum.SigmaMeasureFilter\bin\Debug\Gnarum.SigmaMeasureFilter.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\Tests\SigmaMeasureFilterTestSolution\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Core\Libraries\Gnarum.Quartz\bin\Debug\Gnarum.Quartz.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Core\Libraries\Gnarum\bin\Debug\Gnarum.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\Tests\SigmaMeasureFilterTestSolution\packages\Quartz.2.1.2\lib\net40\Quartz.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\SigmaMeasureFilter\Gnarum.SigmaMeasureFilter.Model.Sap\bin\Debug\Gnarum.SigmaMeasureFilter.Model.Sap.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\SigmaMeasureFilter\Gnarum.SigmaMeasureFilter.Model\bin\Debug\Gnarum.SigmaMeasureFilter.Model.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Core\Libraries\Gnarum.SAP\bin\Debug\Gnarum.SAP.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Modules\Sigma\Tests\SigmaMeasureFilterTestSolution\packages\Moq.4.0.10827\lib\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\WORK\WISE_R3\SVN\trunk\Core\Libraries\Gnarum.SAP\bin\Debug\Ninject.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-22T09:28:36.1760883+01:00" queuing="2014-01-22T09:28:38.2222929+01:00" start="2014-01-22T09:28:38.4523159+01:00" finish="2014-01-22T09:29:11.0725776+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PC-28" outcome="Error" timestamp="2014-01-22T09:29:11.0705774+01:00">
+        <Text>El proceso del host de pruebas terminó inesperadamente.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Can_Process_Plants" storage="c:\work\wise_r3\svn\trunk\modules\sigma\tests\gnarum.sigmameasurefilter.test\bin\debug\gnarum.sigmameasurefilter.test.dll" id="d746e9a4-70bd-85ef-4317-a693cc2403b4">
+      <Execution id="14c20c6c-de41-46fb-a2eb-70f251e4f3b7" />
+      <TestMethod codeBase="C:/WORK/WISE_R3/SVN/trunk/Modules/Sigma/Tests/Gnarum.SigmaMeasureFilter.Test/bin/Debug/Gnarum.SigmaMeasureFilter.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Gnarum.Wise.SigmaMeasureFilter.Test.SigmaMeasureFilterStartTest, Gnarum.SigmaMeasureFilter.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Can_Process_Plants" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="d746e9a4-70bd-85ef-4317-a693cc2403b4" executionId="14c20c6c-de41-46fb-a2eb-70f251e4f3b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="14c20c6c-de41-46fb-a2eb-70f251e4f3b7" testId="d746e9a4-70bd-85ef-4317-a693cc2403b4" testName="Can_Process_Plants" computerName="PC-28" duration="00:00:32.4352432" startTime="2014-01-22T09:28:38.6373344+01:00" endTime="2014-01-22T09:29:11.0725776+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14c20c6c-de41-46fb-a2eb-70f251e4f3b7">
+    </UnitTestResult>
+  </Results>
+</TestRun>
